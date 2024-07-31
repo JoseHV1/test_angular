@@ -1,0 +1,1 @@
+export const OPTIONS_CATEGORIES: string[] = ["all", "electronics", "jewelery", "men's clothing", "women's clothing"]

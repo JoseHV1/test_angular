@@ -1,0 +1,1 @@
+export const OPTIONS_ROWS: number[] = [10, 15, 20]

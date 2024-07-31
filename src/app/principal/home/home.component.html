@@ -1,0 +1,24 @@
+<ng-container *ngIf="existSession">
+  <app-navbar></app-navbar>
+
+  <div class="px-5 mx-3 pb-5 pt-2 mt-3">
+      <div class="card w-50 mb-5">
+          <div class="card-body row">
+              <div class="col-5 d-flex align-items-center">
+                  <label>Categories</label>
+                  <select [(ngModel)]="category" class="form-control ms-2" (change)="categorySelected()">
+                      <option *ngFor="let category of categories" value="{{ category }}">{{ category | titlecase }}</option>
+                  </select>
+              </div>
+              <div class="col-3 d-flex align-items-center">
+                  <label>Limit</label>
+                  <select [(ngModel)]="limit" class="form-control ms-2" (change)="limitSelected()">
+                      <option *ngFor="let limit of limitRows" value="{{ limit }}">{{ limit }}</option>
+                  </select>
+              </div>
+          </div>
+      </div>
+
+      <app-table></app-table>
+  </div>
+</ng-container>

@@ -1,0 +1,12 @@
+:host{
+    &::ng-deep{
+        .mat-mdc-unelevated-button.mat-primary {
+            --mdc-filled-button-container-color: #0f6b0f !important;
+        }
+    }
+    
+    img {
+        width: 9rem;
+        object-fit: cover;
+    }
+}
